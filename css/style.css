@@ -34,7 +34,7 @@ body {
 
     background:
         linear-gradient( rgba(20, 30, 50, 0.7), rgba(20, 30, 50, 0.7)),
-        url(/assets/images/loginBG.png)
+        url(assets/images/loginBG.png)
         left / cover no-repeat;
 
     display: flex;
