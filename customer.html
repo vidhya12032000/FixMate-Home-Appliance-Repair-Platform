@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FixMate | Customer Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/png" href="assets/images/tools.png">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="sidebar-logo">
+                <img src="assets/images/tools.png" alt="FixMate">
+                <h2>FixMate</h2>
+            </div>
+
+            <nav>
+
+                <a href="#" class="nav-link active" data-section="dashboard">
+                    <i class="fa-solid fa-house"></i> <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="nav-link" data-section="booking">
+                    <i class="fa-solid fa-calendar-days"></i> <span>Book Repair</span>
+                </a>
+
+                <a href="#" class="nav-link" data-section="tracking">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> <span>Track Repair</span>
+                </a>
+
+                <a href="#" class="nav-link" data-section="history">
+                    <i class="fa-solid fa-clock-rotate-left"></i> <span>Repair History</span>
+                </a>
+
+                <a href="#" class="nav-link" data-section="invoices">
+                    <i class="fa-solid fa-credit-card"></i> <span>Invoices</span>
+                </a>
+
+                <a href="#" class="nav-link" data-section="settings">
+                    <i class="fa-solid fa-gear"></i> <span>Settings</span>
+                </a>
+
+            </nav>
+
+            <button class="logout-btn" id="logoutBtn">
+                <i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span>
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="dashboard-header">
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+                <div>
+                    <h3>Customer Dashboard</h3>
+                    <p>Manage your appliance repairs</p>
+                </div>
+
+                <div class="header-right">
+
+                    <button class="notification-btn">
+                      <i class="fa-solid fa-bell fa-lg" style="color: rgb(255, 212, 59);"></i>
+                    </button>
+
+                    <div class="profile">
+                        <div class="profile-avatar">
+                            V
+                        </div>
+
+                        <div>
+                            <strong class="userName">Vidhya</strong>
+                            <small>Customer</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Dashboard Section -->
+            <section class="page-section active-section" id="dashboard">
+
+                <div class="welcome-section">
+
+                    <div>
+                      
+                            <h1 id="userName">AC & Fridge Repair</h1>
+                 
+                        <p>
+                            Need a repair? We're here to help.
+                        </p>
+                    </div>
+
+                    <button class="primary-btn" id="bookRepairBtn">
+                        + Book a Repair
+                    </button>
+
+                </div>
+
+
+                <!-- Service Cards -->
+                <h2 class="section-title">Our Services</h2>
+
+                <div class="service-grid">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <img src="/assets/images/snowflake.png">
+                        </div>
+
+                        <h3>AC Repair</h3>
+
+                        <p>
+                            Cooling problems, gas filling,
+                            installation and maintenance.
+                        </p>
+
+                        <button class="service-btn" data-service="AC Repair">
+                            Book Now →
+                        </button>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <img src="/assets/images/fridge.png">
+                        </div>
+
+                        <h3>Refrigerator Repair</h3>
+
+                        <p>
+                            Cooling issues, compressor,
+                            leakage and maintenance.
+                        </p>
+
+                        <button class="service-btn"
+                            data-service="Refrigerator Repair">
+                            Book Now →
+                        </button>
+
+                    </div>
+
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <img src="/assets/images/washing-machine.png">
+                        </div>
+
+                        <h3>Washing Machine</h3>
+
+                        <p>
+                            Drum, drainage, motor and
+                            installation services.
+                        </p>
+
+                        <button class="service-btn"
+                            data-service="Washing Machine Repair">
+                            Book Now →
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Active Repair -->
+                <div class="section-heading">
+
+                    <h2 class="section-title">
+                        Active Repair
+                    </h2>
+
+                    <span class="status-badge">
+                        ● On the Way
+                    </span>
+
+                </div>
+
+
+                <div class="active-repair-card">
+
+                    <div class="repair-top">
+
+                        <div class="repair-appliance">
+                            <div class="repair-icon">
+                                <img src="assets/images/snowflake.png" width="40" height="40">
+                            </div>
+
+                            <div>
+                                <h3>AC Repair</h3>
+                                <p>Repair ID: #FM1024</p>
+                            </div>
+                        </div>
+
+                        <span class="repair-status">
+                            On the Way
+                        </span>
+
+                    </div>
+
+
+                    <div class="technician">
+
+                        <div class="technician-avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <h4>Arun Kumar</h4>
+                            <p>Expert AC Technician</p>
+                        </div>
+
+                        <div class="arrival">
+                            <small>Estimated Arrival</small>
+                            <strong>15 mins</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Progress -->
+                    <div class="progress-container">
+
+                        <div class="progress-step completed">
+                            <span>✓</span>
+                            <p>Booked</p>
+                        </div>
+
+                        <div class="progress-line completed-line"></div>
+
+                        <div class="progress-step completed">
+                            <span>✓</span>
+                            <p>Assigned</p>
+                        </div>
+
+                        <div class="progress-line"></div>
+
+                        <div class="progress-step current">
+                            <span><i class="fa-solid fa-car-side" style="color: rgb(255, 255, 255);"></i></span>
+                            <p>On the Way</p>
+                        </div>
+
+                        <div class="progress-line"></div>
+
+                        <div class="progress-step">
+                            <span>✓</span>
+                            <p>Completed</p>
+                        </div>
+
+                    </div>
+
+
+                    <button class="track-btn" data-section="tracking">
+                        Track Repair →
+                    </button>
+
+                </div>
+
+
+                <!-- Recent Repairs -->
+                <h2 class="section-title">
+                    Recent Repairs
+                </h2>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Technician</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Refrigerator Repair</td>
+                                <td>Raj Kumar</td>
+                                <td>28 Aug 2026</td>
+                                <td>₹850</td>
+                                <td>
+                                    <span class="completed-badge">
+                                        Completed
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Washing Machine</td>
+                                <td>Arun Kumar</td>
+                                <td>12 Aug 2026</td>
+                                <td>₹650</td>
+                                <td>
+                                    <span class="completed-badge">
+                                        Completed
+                                    </span>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- Booking Section -->
+            <section class="page-section" id="booking">
+
+                <h1>Book a Repair</h1>
+
+                <p class="section-description">
+                    Schedule a technician visit for your appliance.
+                </p>
+
+                <div class="booking-card">
+
+                    <form id="bookingForm">
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Appliance</label>
+
+                                <select id="appliance">
+                                    <option value="">Select Appliance</option>
+                                    <option>AC</option>
+                                    <option>Refrigerator</option>
+                                    <option>Washing Machine</option>
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Preferred Date</label>
+
+                                <input type="date" id="repairDate">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Problem Description</label>
+
+                            <textarea
+                                id="problem"
+                                placeholder="Describe your appliance problem..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Address</label>
+
+                            <textarea
+                                id="address"
+                                placeholder="Enter your service address..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button type="submit" class="primary-btn">
+                            Book Technician
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- Tracking Section -->
+            <section class="page-section" id="tracking">
+
+                <h1>Track Your Repair</h1>
+
+                <div class="tracking-card">
+
+                    <h2>AC Repair</h2>
+
+                    <p>Repair ID: #FM1024</p>
+
+                    <div class="big-status">
+                        <i class="fa-solid fa-car"></i> Technician is on the way
+                    </div>
+
+                    <h3>Technician</h3>
+
+                    <p>Arun Kumar</p>
+
+                    <p>Estimated arrival: <strong>15 minutes</strong></p>
+
+                    <button class="primary-btn">
+                      <i class="fa-solid fa-address-book"></i>   Contact Technician
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- History Section -->
+            <section class="page-section" id="history">
+
+                <h1>Repair History</h1>
+
+                <div class="history-grid">
+
+                    <div class="history-card">
+                        <span><i class="fa-regular fa-snowflake"></i></span>
+                        <h3>Refrigerator Repair</h3>
+                        <p>28 Aug 2026</p>
+                        <strong>₹850</strong>
+                        <small>✓ Completed</small>
+                    </div>
+
+                    <div class="history-card">
+                        <span><i class="fa-solid fa-basket-shopping"></i></span>
+                        <h3>Washing Machine</h3>
+                        <p>12 Aug 2026</p>
+                        <strong>₹650</strong>
+                        <small>✓ Completed</small>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Invoice Section -->
+            <section class="page-section" id="invoices">
+
+                <h1>Invoices</h1>
+
+                <div class="invoice-card">
+
+                    <div>
+                        <h3>Invoice #INV1024</h3>
+                        <p>AC Repair • 28 Aug 2026</p>
+                    </div>
+
+                    <strong>₹850</strong>
+
+                    <button class="invoice-btn">
+                        View Invoice
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Settings -->
+            <section class="page-section" id="settings">
+
+                <h1>Settings</h1>
+
+                <div class="settings-card">
+
+                    <h3>Profile Information</h3>
+
+                    <label>Name</label>
+                    <input type="text" value="Vidhya">
+
+                    <label>Email</label>
+                    <input type="email" value="user@gmail.com">
+
+                    <button class="primary-btn">
+                        Save Changes
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+
+    <script src="js/customer.js"></script>
+
+</body>
+</html>

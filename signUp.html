@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixMate SignUp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="images/png" href="assets/images/tools.png">
+</head>
+<body>
+
+    <section class="loginContainer">
+
+
+<!-- Left Section -->
+        <div class="login-image">
+            <div class="overlay">
+                <div class="brand">
+
+                    <h1>FixMate </h1> <img src="assets/images/tools.png">
+                </div>
+                <h2>Reliable Appliance Repair At Your Doorstep</h2>
+                <p>Book trusted technicians for your AC, refrigerator and washing machine.</p>
+           
+            </div>
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="login-section">
+            <div class="login-box">
+                <h1>Welcome</h1>
+                <p class="subtitle">
+                    SignUp to manage your repair services
+                </p>
+
+
+                <form id="signupForm">
+
+                    <!-- Email -->
+                    <div class="input-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <label for="password">Password</label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                        >
+
+                        <small id="passwordError"></small>
+
+                    </div>
+
+                    <!-- Password -->
+                    <div class="input-group">
+
+                        <label for="cpassword">Confirm Password</label>
+
+                        <input
+                            type="password"
+                            id="cpassword"
+                            placeholder="Confirm Password"
+                        >
+
+                        <small id="confirmPasswordError"></small>
+
+                    </div>
+
+
+                 
+
+                    <button type="submit" class="signUp-btn">
+                       Create Account
+                    </button>
+
+                </form>
+
+
+                <p class="register-text">Have an account?<a href="index.html"> Login</a></p>
+
+            </div>
+
+        </div>
+         <div id="toast" class="toast"></div>
+
+    </section>
+
+    <script src="js/signUp.js"></script>
+    
+</body>
+</html>
